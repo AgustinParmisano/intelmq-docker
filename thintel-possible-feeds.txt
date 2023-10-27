@@ -1,0 +1,6 @@
+List of possible Feeds:
+
+- Shadowserver API Report: 
+    - IntelMQ Collector: https://github.com/certtools/intelmq/tree/develop/intelmq/bots/collectors/shadowserver
+        - API KEY: request api key to https://www.shadowserver.org/contact/
+    - IntelMQ Parser: https://github.com/certtools/intelmq/tree/develop/intelmq/bots/parsers/shadowserver
