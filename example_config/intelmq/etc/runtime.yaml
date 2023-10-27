@@ -1,8 +1,22 @@
+AbusechFeodoTracker2023-Parser:
+  bot_id: AbusechFeodoTracker2023-Parser
+  description: Parse the Abuse.ch Feodo Tracker feed
+  enabled: true
+  group: Parser
+  module: intelmq.bots.parsers.abusech.parser_feodotracker2023
+  name: AbusechFeodoTracker2023
+  parameters:
+    bottype: Parser
+    default_fields: {}
+    destination_queues:
+      _default: [deduplicator-expert-queue]
+  run_mode: continuous
 AlienVault-MaliciousActivities-Collector:
   bot_id: AlienVault-MaliciousActivities-Collector
   description: Fetch reports from an URL
   enabled: true
   group: Collector
+  groupname: collectors
   module: intelmq.bots.collectors.http.collector_http
   name: HTTP
   parameters:
@@ -31,6 +45,7 @@ AlienVault-Parser:
   description: Parse data from the AlienVault API
   enabled: true
   group: Parser
+  groupname: parsers
   module: intelmq.bots.parsers.alienvault.parser
   name: AlienVault
   parameters:
@@ -72,6 +87,35 @@ TeamCymru-FullBogons-Collector:
     http_header: {}
     http_password: ''
     http_url: https://team-cymru.org/Services/Bogons/fullbogons-ipv4.txt
+    http_url_formatting: false
+    http_username: ''
+    provider: ''
+    rate_limit: 3600
+    signature_url: ''
+    signature_url_formatting: false
+    ssl_client_cert: ''
+    ssl_client_certificate: ''
+    verify_pgp_signatures: false
+  run_mode: continuous
+abusech-FeodoCC-Collector:
+  bot_id: abusech-FeodoCC-Collector
+  description: Fetch reports from an URL
+  enabled: true
+  group: Collector
+  groupname: collectors
+  module: intelmq.bots.collectors.http.collector_http
+  name: HTTP
+  parameters:
+    bottype: Collector
+    code: ''
+    destination_queues:
+      _default: [AbusechFeodoTracker2023-Parser-queue]
+    documentation: ''
+    extract_files: false
+    gpg_keyring: ''
+    http_header: {}
+    http_password: ''
+    http_url: https://feodotracker.abuse.ch/downloads/ipblocklist_recommended.txt
     http_url_formatting: false
     http_username: ''
     provider: ''
