@@ -1,0 +1,5 @@
+# Bots develope Guide
+
+- Crear los bots en la carpeta thintel_bots
+- Para debuggear los bots se pueden lanzar excepciones con ValueError(mensaje) #Ver como mejorar 
+- Para que se persistan los cambios en los bots se puede reiniciar los contenedores #Ver como mejorar
