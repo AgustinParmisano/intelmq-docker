@@ -6,6 +6,6 @@ List of possible Feeds:
     - IntelMQ Parser: https://github.com/certtools/intelmq/tree/develop/intelmq/bots/parsers/shadowserver
 
 - Abusix Bloklist:
-    - intelMQ Collector:
+    - intelMQ Collector: Rsync
         - API KEY: https://abusix.com/products/abusix-mail-intelligence/
     IntelMQ Parser:
