@@ -9,3 +9,27 @@ List of possible Feeds:
     - intelMQ Collector: Rsync
         - API KEY: https://abusix.com/products/abusix-mail-intelligence/
     IntelMQ Parser:
+
+
+Files: 
+https://threatfox.abuse.ch/export/csv/recent/
+https://rescure.me/rescure_blacklist.txt
+https://rescure.me/rescure_domain_blacklist.txt
+https://labs.inquest.net/api/iocdb/list
+
+API/Crawl:
+https://pulsedive.com/explore/?q=seen%3Dweek%20type%3Dip%2Cipv6%2Cdomain
+https://www.threatminer.org/links.php
+
+Crawl:
+https://urlquery.net/
+https://phishtank.org/phish_search.php?valid=y&active=y&Search=Search
+
+API:
+https://docs.abuseipdb.com/#plaintext-blacklist
+https://threatbook.io/api/ip-intelligence
+https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-defender-threat-intelligence#
+https://maltiverse.com
+
+Intelmq like systems: 
+https://github.com/intelowlproject/IntelOwl
